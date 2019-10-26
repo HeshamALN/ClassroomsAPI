@@ -21,7 +21,7 @@ class DetailView(RetrieveAPIView): #done tested
 class CreateView(CreateAPIView): #done pending testing
 	serializer_class = CreateSerializer
 
-	def permission_classes(self, serializer):
+	def perform_create(self, serializer):
 		serializer.save(teacher=self.request.user)
 
 

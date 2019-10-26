@@ -29,7 +29,7 @@ urlpatterns = [
     path('api/classrooms/<int:classroom_id>/update/', UpdateView.as_view()), #done i think
     
 
-    path('api/classrooms/<int:classroom_id>/create/', CreateView.as_view()), #done i think
+    path('api/classrooms/create/', CreateView.as_view()), #done i think
 	
 
 	path('api/login/', TokenObtainPairView.as_view()), #done i think
