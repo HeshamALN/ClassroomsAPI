@@ -9,7 +9,7 @@ from apiclasses.views import ListView, DetailView, UpdateView,DeleteView,CreateV
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
-    TokenRefreshView,
+    TokenRefreshView, 
 )
 
 urlpatterns = [
